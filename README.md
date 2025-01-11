@@ -76,5 +76,5 @@
 
 >Ответ: [deploy.sh](./playbook/deploy.sh)
 
-![play1](extra/enc_play1.png)
-![play2](extra/enc_play2.png)
+![play1](extra/play1.png)
+![play2](extra/play2.png)
