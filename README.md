@@ -55,3 +55,26 @@
 ## Необязательная часть
 
 1. При помощи ansible-vault расшифруйте все зашифрованные файлы с переменными.
+
+![decrypt](extra/decrypt.png)
+
+2. Зашифруйте отдельное значение PaSSw0rd для переменной some_fact паролем netology. Добавьте полученное значение в group_vars/all/exmp.yml.
+
+![enc_string](extra/enc_string.png)
+![enc_fact](extra/enc_fact.png)
+
+3. Запустите playbook, убедитесь, что для нужных хостов применился новый fact.
+
+![play](extra/enc_play.png)
+
+4. Добавьте новую группу хостов fedora, самостоятельно придумайте для неё переменную. В качестве образа можно использовать [этот вариант](https://hub.docker.com/r/pycontribs/fedora).
+
+![fe](extra/fe.png)
+![fact](extra/fact.png)
+
+5. Напишите скрипт на bash: автоматизируйте поднятие необходимых контейнеров, запуск ansible-playbook и остановку контейнеров.
+
+>Ответ: [deploy.sh](./playbook/deploy.sh)
+
+![play1](extra/enc_play1.png)
+![play2](extra/enc_play2.png)
